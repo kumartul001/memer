@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Meme Builder</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Meme Builder</h1>
+        
+        <div class="controls">
+            <select id="templateSelect">
+                <option value="">Choose a Meme Template</option>
+                <!-- Templates populated by JS -->
+            </select>
+
+            <label class="file-label">
+                <input type="file" id="imageUpload" accept="image/*">
+                Upload Image
+            </label>
+
+            <input type="text" id="topText" placeholder="Top Text" maxlength="50">
+            <input type="text" id="bottomText" placeholder="Bottom Text" maxlength="50">
+
+            <button id="downloadBtn" disabled>Download Meme</button>
+        </div>
+
+        <div class="canvas-container">
+            <canvas id="memeCanvas"></canvas>
+        </div>
+    </div>
+
+    <!-- JS Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
